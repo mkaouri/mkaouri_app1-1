@@ -254,7 +254,7 @@ function addVideo(id, videofile, istransparent) {
   
 	//var videoMat = new BABYLON.CustomMaterial("video material", scene);
 	
-    const texture =  new BABYLON.VideoTexture("video", ["data/" + videofile, "data/" + videofile.toString().replace(".mp4", ".webm")], scene, true);
+    const texture =  new BABYLON.VideoTexture("video", ["data/" + videofile, "data/" + videofile.toString().replace(".mp4", ".m3u8")], scene, true);
 
 	texture.getAlphaFromRGB = true;
 	
